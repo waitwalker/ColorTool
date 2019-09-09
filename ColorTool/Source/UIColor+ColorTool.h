@@ -12,6 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (ColorTool)
 
+
+/**
+ Conversion to color based on color strings
+
+ @param hexString hexString
+ @param alpha hexString
+ @return UIColor
+ */
++ (UIColor *)colorWithHexString: (NSString *)hexString alpha: (CGFloat)alpha;
+
 @end
 
 NS_ASSUME_NONNULL_END

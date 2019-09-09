@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+ColorTool.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIView *testView = [[UIView alloc]initWithFrame:CGRectMake(100, 200, 200, 200)];
+    testView.backgroundColor = [UIColor colorWithHexString:@"#3399ff" alpha:1.0];
+    [self.view addSubview: testView];
 }
 
 
