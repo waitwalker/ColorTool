@@ -25,11 +25,13 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                      ColorTool is a simple color conversion tool
-
+                      ColorTool is a simple color conversion tool.
+                      examples:
+                      UIColor *a_color = [UIColor colorWithHexString:@"#3399ff" alpha:1.0];
+                      UIColor *b_color = [UIColor colorWithHexString:@"#cceeff" alpha:0.5];
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/ColorToolSpec"
+  spec.homepage     = "https://github.com/waitwalker/ColorTool"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,8 +67,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios
+  spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -81,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ColorToolSpec.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/waitwalker/ColorTool.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,8 +94,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Source", "Source/**/*.{h,m}"
+  spec.exclude_files = "Source/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -131,7 +133,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
