@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "ColorToolSpec"
+  spec.name         = "ColorTool"
   spec.version      = "1.0.0"
   spec.summary      = "Conversion to color based on color strings."
 
@@ -94,10 +94,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Source", "Source/**/*.{h,m}"
-  spec.exclude_files = "Source/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.source_files  = "Classes/**/*.{h,m}"
+  spec.exclude_files = "Classes/Exclude/**/*.{h,m}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

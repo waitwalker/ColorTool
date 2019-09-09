@@ -29,6 +29,7 @@
 		5212FF1D2325D94900C1550B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5212FF252325D9B200C1550B /* UIColor+ColorTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorTool.h"; sourceTree = "<group>"; };
 		5212FF262325D9B200C1550B /* UIColor+ColorTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorTool.m"; sourceTree = "<group>"; };
+		5212FF2C2325EA6800C1550B /* ColorToolHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorToolHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +62,7 @@
 		5212FF0D2325D94700C1550B /* ColorTool */ = {
 			isa = PBXGroup;
 			children = (
-				5212FF242325D97F00C1550B /* Source */,
+				5212FF2A2325E80D00C1550B /* Classes */,
 				5212FF0E2325D94700C1550B /* AppDelegate.h */,
 				5212FF0F2325D94700C1550B /* AppDelegate.m */,
 				5212FF112325D94700C1550B /* ViewController.h */,
@@ -75,13 +76,22 @@
 			path = ColorTool;
 			sourceTree = "<group>";
 		};
-		5212FF242325D97F00C1550B /* Source */ = {
+		5212FF292325E66B00C1550B /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				5212FF252325D9B200C1550B /* UIColor+ColorTool.h */,
 				5212FF262325D9B200C1550B /* UIColor+ColorTool.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		5212FF2A2325E80D00C1550B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5212FF292325E66B00C1550B /* Source */,
+				5212FF2C2325EA6800C1550B /* ColorToolHeaders.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
